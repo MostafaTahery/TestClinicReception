@@ -6,10 +6,10 @@ import com.company.src.tst.TestSpecification;
 
 public class Main {
 
-    public static String choice = "";
+    private static String choice = "";
 
     public static void main(String[] args) {
-
+        Utils.init();
         while (!choice.equals("5")) {
             Utils.showMenu();
             choice = Utils.getChoice();
